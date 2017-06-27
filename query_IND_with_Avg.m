@@ -13,7 +13,7 @@ foundCount=0;
 okResult=zeros(1,100);
 precision=zeros(100,5000);
 tic;
-for queryListID=1:100
+for queryListID=44      
     fprintf('Query List ID: %d/100\n',queryListID);
     queryID=queryStruct{queryListID}.ID;
     
@@ -80,6 +80,7 @@ for queryListID=1:100
             imshow(imread(filename));
          end
     end
+    break;
 
 end
 test_Time=toc
